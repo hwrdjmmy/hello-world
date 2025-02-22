@@ -10,4 +10,10 @@ print(r)
 
 # Parsing the HTML
 soup = BeautifulSoup(r.content, 'html.parser')
-print(soup.prettify()) 
+print(soup.title) 
+
+# Getting the name of the tag
+print(soup.title.name)
+
+# Getting the name of parent tag
+print(soup.title.parent.name)
