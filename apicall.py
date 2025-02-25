@@ -12,4 +12,5 @@ results = client.get("ynw2-4viq", limit=2000)
 # Convert to pandas DataFrame
 results_df = pd.DataFrame.from_records(results)
 
-print(list(results_df.columns))
+# print(list(results_df.columns))
+print(results_df.head())
